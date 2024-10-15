@@ -1,13 +1,13 @@
 [![npm version](https://badge.fury.io/js/angular2-expandable-list.svg)](https://badge.fury.io/js/angular2-expandable-list)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 
-# Sample Package Changelog Scraper
+# Package Changelog Scraper
 
-> Sample Package Changelog Scraper
+> A sample Package Changelog Scraper
 
 ## Prerequisites
 
-This project requires NodeJS (version 20 or later) and NPM.
+This project requires PNPM, NodeJS (version 20 or later) and NPM.
 [Node](http://nodejs.org/) and [NPM](https://npmjs.org/) are really easy to install.
 To make sure you have them available on your machine,
 try running the following command.
@@ -20,14 +20,15 @@ v20.11.1
 
 ## Table of contents
 
-- [Sample Package Changelog Scraper](#sample-package-changelog-scraper)
+- [Package Changelog Scraper](#package-changelog-scraper)
   - [Prerequisites](#prerequisites)
   - [Table of contents](#table-of-contents)
   - [Getting Started](#getting-started)
   - [Installation](#installation)
   - [Usage](#usage)
-    - [Serving the app](#serving-the-app)
-    - [Running the tests](#running-the-tests)
+    - [Serving the app locally](#serving-the-app-locally)
+    - [Serving the client app](#serving-the-client-app)
+    - [Serving the client app](#serving-the-client-app-1)
   - [Contributing](#contributing)
   - [Credits](#credits)
   - [Built With](#built-with)
@@ -53,23 +54,30 @@ $ cd package-changelog-scraper
 To install the project's dependencies, run:
 
 ```sh
-$ npm install
+$ pnpm install
 ```
 
 ## Usage
 
-### Serving the app
+### Serving the app locally
 
 ```sh
-$ npm start
+$ pnpm start
 ```
 
-### Running the tests
+This will run both the client and the server projects
+
+### Serving the client app
 
 ```sh
-$ npm test
+$ pnpm client:start
 ```
 
+### Serving the client app
+
+```sh
+$ pnpm api:start
+```
 
 ## Contributing
 
@@ -97,7 +105,7 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 
 ## Authors
 
-* **andreasonny83** - *Initial work* - [@andreasonny83](https://github.com/andreasonny83)
+TODO: Write authors
 
 See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
 
