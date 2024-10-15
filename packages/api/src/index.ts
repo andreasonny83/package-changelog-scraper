@@ -28,10 +28,12 @@ app.post('/', async (req: Request, res: Response) => {
 
     const changelog = await axios.get(url);
     console.log('Changelog:', changelog.data);
+    return res.send(changelog.data);
   } catch (error) {
     console.error('Error:', error);
     return res.status(400).send('Package not found');
   }
+
   return res.send(packageId);
 });
 
